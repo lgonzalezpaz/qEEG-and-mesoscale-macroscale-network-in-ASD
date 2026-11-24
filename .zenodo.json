@@ -1,10 +1,9 @@
 {
   "title": "Reproducible R and Python pipeline: Electroencephalographic criticality and mesoscale–macroscale network decoupling distinguish autism spectrum disorder from neurological disorders: a multi-cohort study",
   "upload_type": "software",
-  "description": "Complete refined R scripts (01-05), Python statistical audit, Empirical Bayes ComBat harmonization, REML linear mixed-effects modeling, Fisher z-test stratification, figure generation, and DOCX manuscript builder supporting the multi-repository qEEG investigation across N = 4,834 EEG recordings (4,609 valid).",
+  "description": "Complete refined R scripts (01-05), Python statistical audit, Empirical Bayes ComBat harmonization, REML linear mixed-effects modeling, Fisher z-test stratification, and publication figure generation pipeline supporting the multi-repository qEEG investigation across N = 4,834 EEG recordings (4,609 valid; 2,569 unique biological participants). The accompanying manuscript is currently under peer review and is excluded from this public archive.",
   "access_right": "open",
-  "license": "MIT",
-  "version": "v1.0.0",
+  "license": "mit",
   "keywords": [
     "Autism Spectrum Disorder",
     "Quantitative Electroencephalography",
@@ -17,9 +16,28 @@
   ],
   "creators": [
     {
-      "name": "[Corresponding Author Surname, Initials]",
-      "affiliation": "[Institution Affiliation 1]",
-      "orcid": "0000-0000-0000-0000"
+      "name": "Alvarado, Ysaías J.",
+      "affiliation": "Instituto Venezolano de Investigaciones Científicas (IVIC), Centro de Biomedicina Molecular (CBM), Maracaibo, Venezuela"
+    },
+    {
+      "name": "Lossada, Carla",
+      "affiliation": "Instituto Venezolano de Investigaciones Científicas (IVIC), Centro de Biomedicina Molecular (CBM), Maracaibo, Venezuela"
+    },
+    {
+      "name": "Delgado, Ariana",
+      "affiliation": "Instituto Venezolano de Investigaciones Científicas (IVIC), Centro de Biomedicina Molecular (CBM), Maracaibo, Venezuela"
+    },
+    {
+      "name": "Quintero, Máximo",
+      "affiliation": "Servicio Autónomo Hospital Universitario de Maracaibo (SAHUM); Universidad del Zulia, Facultad de Medicina, Maracaibo, Venezuela"
+    },
+    {
+      "name": "Cardozo-Urdaneta, Arlene",
+      "affiliation": "Instituto Venezolano de Investigaciones Científicas (IVIC), Centro de Biomedicina Molecular (CBM), Maracaibo, Venezuela"
+    },
+    {
+      "name": "González-Paz, Lenin",
+      "affiliation": "Instituto Venezolano de Investigaciones Científicas (IVIC), Centro de Biomedicina Molecular (CBM), Maracaibo, Venezuela"
     }
   ],
   "related_identifiers": [

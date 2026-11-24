@@ -1,10 +1,12 @@
 # Electroencephalographic criticality and mesoscale–macroscale network decoupling distinguish autism spectrum disorder from neurological disorders: a multi-cohort study
 
-**Open-Science Computational & Statistical Reproducibility Archive (`paper40`)**
+**Open-Science Computational & Statistical Reproducibility Archive**
+
+> **Note on Manuscript Availability:** The accompanying research manuscript is currently undergoing peer review and is intentionally excluded from this public repository and its Zenodo snapshot. Only analytical code, derived statistical summaries, metadata provenance, summary tables, and publication figures are hosted here.
 
 ## Overview
 
-This repository provides the refined `R` and `Python` analytical pipelines, statistical audits, empirical Bayes harmonization checks, publication figure builders, and Nature-style Word (`.docx`) manuscript compiler accompanying our multi-site investigation across **4,834 EEG recordings** (**4,609 valid recordings** spanning **2,569 valid / 2,576 total unique biological participants** and 26,096 ROI observations) harmonized from eleven open-access neurodevelopmental, normative, and clinical neurology repositories (`complete_metadata.xlsx`).
+This repository provides the refined `R` and `Python` analytical pipelines, statistical audits, empirical Bayes harmonization checks, and publication figure generation scripts supporting our multi-site investigation across **4,834 EEG recordings** (**4,609 valid recordings** spanning **2,569 valid / 2,576 total unique biological participants** and 26,096 ROI observations) harmonized from eleven open-access neurodevelopmental, normative, and clinical neurology repositories (`complete_metadata.xlsx` inside `complete_metadata.zip`).
 
 ### Key Scientific & Methodological Findings
 
@@ -19,48 +21,48 @@ This repository provides the refined `R` and `Python` analytical pipelines, stat
 ## Repository Structure
 
 ```text
-GitHub_Zenodo_Repository/
-├── R/
+qEEG-and-mesoscale-macroscale-network-in-ASD/
+├── R.zip                                   # Extracted to R/: refined R scripts (01–05) + changelog
 │   ├── 01_build_master_database.R          # Deterministic cohort assembly & NA/nan hygiene
 │   ├── 02_harmonization_and_roi_aggregation.R # Empirical Bayes ComBat & missingness audit
 │   ├── 03_unsupervised_pca_hcpc.R          # 65-variable PCA & 7-cluster HCPC phenotyping
 │   ├── 04_multilevel_lme_and_decoupling.R  # Rank-corrected REML LME & Fisher z decoupling
-│   ├── 05_supervised_random_forest_validation.R # Leakage-free balanced RF & 6-arm ablation
+│   ├── 05_supervised_random_forest_validation.R # Leakage-free balanced RF & ablation
 │   └── REFINEMENT_CHANGELOG.md             # Line-by-line audit vs. legacy Session001-006b scripts
-├── python/
+├── python.zip                              # Extracted to python/: statistical audit & figure scripts
 │   ├── 01_statistical_audit_and_modeling.py # Full Python reproduction of R workspace (.RData)
-│   ├── 02_generate_publication_figures.py  # Colorblind-safe vector PDF & 600-DPI PNG generator
-│   └── 03_build_styled_docx.py             # Nature-style Word (.docx) formatter (TNR 12pt, line nums)
-├── data_summary/                           # Derived non-PII statistical summaries, CIs & ROC JSON
+│   └── 02_generate_publication_figures.py  # Colorblind-safe vector PDF & 600-DPI PNG generator
+├── data_summary.zip                        # Extracted to data_summary/: derived non-PII summaries & ROC JSON
+├── complete_metadata.zip                   # Three-sheet metadata provenance workbook (complete_metadata.xlsx)
+├── Tables.zip                              # Extracted to Tables/: publication-ready summary CSV tables
+├── Figures.zip                             # Extracted to Figures/: vector PDF & 600-DPI PNG figures (Fig1–Fig6)
 ├── environment.yml                         # Reproducible Conda environment specification
 ├── requirements.txt                        # Exact pinned Python package versions
 ├── CITATION.cff                            # Machine-readable software citation metadata
-├── .zenodo.json                            # Zenodo DOI & OpenNeuro/PhysioNet provenance metadata
+├── .zenodo.json                            # Zenodo archive & dataset citation metadata
 ├── LICENSE                                 # MIT License
 └── README.md                               # This guide
 ```
 
 ---
 
-## Reproducing the Analysis & Manuscript
+## Reproducing the Analysis & Figures
 
 ### Python Pipeline (Standalone Verification)
 
-Install dependencies via pip (`pip install -r requirements.txt`) or Conda (`conda env create -f environment.yml`):
+Extract the zipped folders into the repository root (`R/`, `python/`, `data_summary/`, `Tables/`, `Figures/`), then install dependencies via pip (`pip install -r requirements.txt`) or Conda (`conda env create -f environment.yml`):
 
 ```bash
 python python/01_statistical_audit_and_modeling.py
 python python/02_generate_publication_figures.py
-python python/03_build_styled_docx.py
 ```
 
-- `01_statistical_audit_and_modeling.py` reads the original read-only R workspace (`.RData`) alongside the canonical three-sheet metadata registry (`complete_metadata.xlsx` / `complete_metadata.zip`) and regenerates all derived summary tables, `Metadata_Complete_Recording_to_Participant_Map.csv`, `Biological_Participant_Frontal_Summary.csv`, ComBat audits, record- and biological-participant-clustered REML LME Wald $\chi^2$ statistics, Fisher *r*-to-*z* decoupling comparisons (including single-condition `restEO` `1:1` sensitivity), and 8-arm Random Forest ablation & participant-disjoint ROC benchmarks into `data_summary/` and `../Tables/`.
-- `02_generate_publication_figures.py` produces all six multi-panel figures (`Fig1`–`Fig6`) in vector `.pdf` and 600 DPI `.png` formats inside `../Figures/`.
-- `03_build_styled_docx.py` compiles `../Manuscript_MesoMacro_qEEG_ASD_NatureStyle.md` into `../Manuscript_MesoMacro_qEEG_ASD_NatureStyle.docx` enforcing US Letter layout, 2.54 cm margins, Times New Roman 12 pt double-spaced body, continuous OOXML left-margin line numbers, top-right `PAGE` numbers, centered equations `(1)`–`(12)`, three-line native tables `1`–`7`, and embedded 600 DPI figures.
+- `01_statistical_audit_and_modeling.py` reads the original read-only R workspace (`.RData`) alongside the canonical three-sheet metadata registry (`complete_metadata.xlsx` / `complete_metadata.zip`) and regenerates all derived summary tables, `Metadata_Complete_Recording_to_Participant_Map.csv`, `Biological_Participant_Frontal_Summary.csv`, ComBat audits, record- and biological-participant-clustered REML LME Wald $\chi^2$ statistics, Fisher *r*-to-*z* decoupling comparisons (including single-condition `restEO` `1:1` sensitivity), and 8-arm Random Forest ablation & participant-disjoint ROC benchmarks into `data_summary/` and `Tables/`.
+- `02_generate_publication_figures.py` produces all six multi-panel figures (`Fig1`–`Fig6`) in vector `.pdf` and 600 DPI `.png` formats inside `Figures/`.
 
 ### Refined R Pipeline (`R/01`–`R/05`)
 
-The modernized, artifact-free R scripts inside `R/` replace interactive `.RData` dependencies (`Session001`–`Session006b`) with explicit CSV/RDS checkpoints, automatic structural-zero column pruning in `lme4`/`car::Anova`, log-transform pre-conditioning before `sva::ComBat`, and stratified 6-arm `caret`/`randomForest` cross-validation (documented in [`R/REFINEMENT_CHANGELOG.md`](R/REFINEMENT_CHANGELOG.md)).
+The modernized, artifact-free R scripts inside `R/` replace interactive `.RData` dependencies (`Session001`–`Session006b`) with explicit CSV/RDS checkpoints, automatic structural-zero column pruning in `lme4`/`car::Anova`, log-transform pre-conditioning before `sva::ComBat`, and stratified 6-arm `caret`/`randomForest` cross-validation (documented in `R/REFINEMENT_CHANGELOG.md`).
 
 ---
 

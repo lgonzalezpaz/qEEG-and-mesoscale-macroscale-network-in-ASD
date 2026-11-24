@@ -1,15 +1,29 @@
 cff-version: 1.2.0
-message: "If you use this software or reproducible analysis pipeline, please cite the accompanying manuscript."
+message: "If you use this software or reproducible analysis pipeline, please cite this repository."
 title: "Electroencephalographic criticality and mesoscale–macroscale network decoupling distinguish autism spectrum disorder from neurological disorders: a multi-cohort study"
-version: "1.0.0"
-date-released: "2026-11-14"
+version: "1.0.2"
+date-released: "2026-11-24"
 license: "MIT"
 type: software
 authors:
-  - family-names: "[Author1-Family]"
-    given-names: "[Author1-Given]"
-    affiliation: "[Institution Affiliation 1]"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Alvarado"
+    given-names: "Ysaías J."
+    affiliation: "Instituto Venezolano de Investigaciones Científicas (IVIC), Centro de Biomedicina Molecular (CBM), Maracaibo, Venezuela"
+  - family-names: "Lossada"
+    given-names: "Carla"
+    affiliation: "Instituto Venezolano de Investigaciones Científicas (IVIC), Centro de Biomedicina Molecular (CBM), Maracaibo, Venezuela"
+  - family-names: "Delgado"
+    given-names: "Ariana"
+    affiliation: "Instituto Venezolano de Investigaciones Científicas (IVIC), Centro de Biomedicina Molecular (CBM), Maracaibo, Venezuela"
+  - family-names: "Quintero"
+    given-names: "Máximo"
+    affiliation: "Servicio Autónomo Hospital Universitario de Maracaibo (SAHUM); Universidad del Zulia, Facultad de Medicina, Maracaibo, Venezuela"
+  - family-names: "Cardozo-Urdaneta"
+    given-names: "Arlene"
+    affiliation: "Instituto Venezolano de Investigaciones Científicas (IVIC), Centro de Biomedicina Molecular (CBM), Maracaibo, Venezuela"
+  - family-names: "González-Paz"
+    given-names: "Lenin"
+    affiliation: "Instituto Venezolano de Investigaciones Científicas (IVIC), Centro de Biomedicina Molecular (CBM), Maracaibo, Venezuela"
 keywords:
   - autism spectrum disorder
   - quantitative electroencephalography
@@ -19,5 +33,4 @@ keywords:
   - self-organized criticality
   - ComBat harmonization
   - machine learning
-repository-code: "[GITHUB_REPOSITORY_URL]"
-doi: "[ZENODO_RESERVATION_DOI]"
+repository-code: "https://github.com/lgonzalezpaz/qEEG-and-mesoscale-macroscale-network-in-ASD"
