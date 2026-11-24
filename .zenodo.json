@@ -1,0 +1,77 @@
+{
+  "title": "Reproducible R and Python pipeline: Electroencephalographic criticality and mesoscale–macroscale network decoupling distinguish autism spectrum disorder from neurological disorders: a multi-cohort study",
+  "upload_type": "software",
+  "description": "Complete refined R scripts (01-05), Python statistical audit, Empirical Bayes ComBat harmonization, REML linear mixed-effects modeling, Fisher z-test stratification, figure generation, and DOCX manuscript builder supporting the multi-repository qEEG investigation across N = 4,834 EEG recordings (4,609 valid).",
+  "access_right": "open",
+  "license": "MIT",
+  "version": "v1.0.0",
+  "keywords": [
+    "Autism Spectrum Disorder",
+    "Quantitative Electroencephalography",
+    "Hurst Exponent",
+    "Shannon Entropy",
+    "Graph Theory",
+    "Self-Organized Criticality",
+    "NeuroComBat",
+    "Random Forest"
+  ],
+  "creators": [
+    {
+      "name": "[Corresponding Author Surname, Initials]",
+      "affiliation": "[Institution Affiliation 1]",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds006777.v1.0.0",
+      "relation": "cites",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds006780.v1.0.0",
+      "relation": "cites",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.17632/spwnt8t25y.1",
+      "relation": "cites",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.dib.2023.109057",
+      "relation": "cites",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.15131/shef.data.16840351",
+      "relation": "cites",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.6084/m9.figshare.4810705",
+      "relation": "cites",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.13026/C2K01R",
+      "relation": "cites",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003555.v1.0.1",
+      "relation": "cites",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004504.v1.0.7",
+      "relation": "cites",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004584.v1.0.0",
+      "relation": "cites",
+      "scheme": "doi"
+    }
+  ]
+}

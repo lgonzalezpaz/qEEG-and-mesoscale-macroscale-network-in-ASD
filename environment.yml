@@ -1,0 +1,30 @@
+name: asd-qeeg-mesomacro
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - r-base>=4.3
+  - r-tidyverse
+  - r-lme4
+  - r-car
+  - r-factominer
+  - r-factoextra
+  - r-caret
+  - r-randomforest
+  - r-readxl
+  - r-rstatix
+  - r-sva
+  - pip
+  - pip:
+      - numpy==2.5.4
+      - pandas==3.1.1
+      - scipy==1.18.1
+      - statsmodels==0.15.0
+      - patsy==1.0.3
+      - scikit-learn==1.9.1
+      - matplotlib==3.11.2
+      - seaborn==0.13.2
+      - python-docx==1.2.0
+      - rdata==1.1.0
+      - openpyxl==3.1.5

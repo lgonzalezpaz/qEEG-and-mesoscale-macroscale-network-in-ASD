@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or reproducible analysis pipeline, please cite the accompanying manuscript."
+title: "Electroencephalographic criticality and mesoscale–macroscale network decoupling distinguish autism spectrum disorder from neurological disorders: a multi-cohort study"
+version: "1.0.0"
+date-released: "2026-11-14"
+license: "MIT"
+type: software
+authors:
+  - family-names: "[Author1-Family]"
+    given-names: "[Author1-Given]"
+    affiliation: "[Institution Affiliation 1]"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+keywords:
+  - autism spectrum disorder
+  - quantitative electroencephalography
+  - Hurst exponent
+  - Shannon entropy
+  - graph theory
+  - self-organized criticality
+  - ComBat harmonization
+  - machine learning
+repository-code: "[GITHUB_REPOSITORY_URL]"
+doi: "[ZENODO_RESERVATION_DOI]"

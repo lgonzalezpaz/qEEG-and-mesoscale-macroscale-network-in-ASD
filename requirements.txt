@@ -1,0 +1,13 @@
+# Python dependencies verified on Windows (Python 3.12)
+numpy==2.5.4
+pandas==3.1.1
+scipy==1.18.1
+statsmodels==0.15.0
+patsy==1.0.3
+scikit-learn==1.9.1
+matplotlib==3.11.2
+seaborn==0.13.2
+python-docx==1.2.0
+rdata==1.1.0
+openpyxl==3.1.5
+pyarrow>=15.0.0
